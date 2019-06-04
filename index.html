@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <meta charset="UTF-8">
-<title>TimezZ example page</title>
+<title>MY BIIRTHDAY</title>
 <style>
 body {
-  font-family: Arial;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 24px; font-style: normal; 
 }
 
 .timer,
@@ -46,7 +46,7 @@ body {
 <script src="dist/timezz.js"></script>
 <script>
 const timer = new TimezZ('.j-first-timer', {
-  date: 'Dec 02, 2013 00:00:00',
+  date: 'May 12, 2020 00:00:00',
   text: {
     days: ' days',
     hours: ' hours',
@@ -57,24 +57,4 @@ const timer = new TimezZ('.j-first-timer', {
   template: '<span>NUMBER</span><i>LETTER</i> ',
 });
 
-const timer2 = new TimezZ('.j-second-timer', {
-  date: 'May 27, 1996',
-
-  finished() {
-    alert('finished');
-  },
-});
-
-const timer3 = new TimezZ('.j-third-timer', {
-  date: 'Jan 01, 2025',
-  template: '<div>NUMBER<span>LETTER</span></div>',
-
-  beforeDestroy() {
-    alert('destroyed');
-  },
-});
-
-setTimeout(() => {
-  timer3.destroy();
-}, 10000);
 </script>
